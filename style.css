@@ -1,0 +1,36 @@
+:root {
+    background-color: rgb(200, 200, 200);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: rgb(111, 111, 111);
+}
+
+.flex-spacer {
+    flex-grow: .9;
+}
+
+.navRowOne {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navRowTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
