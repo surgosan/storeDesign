@@ -1,5 +1,5 @@
 :root {
-    background-color: rgb(200, 200, 200);
+    background-color: #184ba4;
 }
 
 * {
@@ -33,4 +33,11 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+}
+
+.navCategory {
+    border: solid 2px white;
+    padding: 3px;
+    border-radius: 4px;
+    background: rgb(200, 200, 200);
 }
