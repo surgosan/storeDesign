@@ -1,0 +1,61 @@
+:root {
+    /* Static Colors */
+    --accent: #49dfb4;
+    --main: #5fe3bd;
+    
+    /* Light Mode Colors */
+    --light-background: #eefcf8;
+    --light-secondary: #fbe9f7;
+    --light-text: #051e17;
+    
+    /* Dark Mode Colors */
+    --dark-background: #051e17;
+    --dark-secondary: #e1faf3;
+    --dark-text: #eefcf8;
+}
+
+:root {
+    /* light mode */
+    --background: var(--light-background);
+    --secondary: var(--light-secondary);
+    --text: var(--dark-background);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: var(--dark-background);
+        --secondary: var(--dark-secondary);
+        --text: var(--dark-text);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100dvh;
+    background: var(--background);
+}
+
+h1, h2, h3, p, a, ul, li {
+    color: var(--text);
+}
+
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav a.router-link-exact-active {
+    color: var(--accent);
+  }
+
+/* You can call any of these variables. Preferebly just
+    --backround,
+    --secondary,
+    --text,
+    --accent, and
+    --main.
+*/
