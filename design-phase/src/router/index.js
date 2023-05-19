@@ -1,5 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import AboutViewVue from '../views/AboutView.vue';
+import marketView from '../views/marketView.vue';
+import contactView from '../views/faqAndContactView.vue';
+import NotFound from '../views/NotFoundView.vue';
+import login from '../views/LoginView.vue';
 
 const routes = [
   {
@@ -10,12 +15,27 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-    }
+    component: AboutViewVue
+  },
+  {
+    path: '/market',
+    name: 'market',
+    component: marketView
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: contactView
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: login
+  },
+  {
+    path: "/:patchMatch(.*)*",
+    name: NotFound,
+    component: NotFound
   }
 ]
 

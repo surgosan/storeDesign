@@ -39,7 +39,18 @@ body {
     background: var(--background);
 }
 
-h1, h2, h3, p, a, ul, li {
+input, button, select {
+    background: var(--secondary);
+    border: none;
+    border-radius: .5rem;
+    padding: .5em;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3, p, a, ul, li, nav {
     color: var(--text);
 }
 
