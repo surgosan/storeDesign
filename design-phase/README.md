@@ -28,6 +28,7 @@ npm run build
 6. Visit the page where your assigned component is. Also visit the component in the IDE. You can find it in **src/components/**
 7. Edit however you need, and each time you save, it will refresh the page.
 - If you are just uploading to the github instead of using git, it is fine since the only thing you will need to upload is your component.
+- **ctrl + c** in the terminal to stop the server
 ## Assignments
 
 I have made some random assignments, if you want to change it, ask whoever has the one you want. Or notify what you want to work on if the component doesn't exist yet
