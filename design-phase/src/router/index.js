@@ -2,9 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutViewVue from '../views/AboutView.vue';
 import marketView from '../views/marketView.vue';
-import contactView from '../views/faqAndContactView.vue';
+import contactView from '../views/ContactView.vue';
 import NotFound from '../views/NotFoundView.vue';
 import login from '../views/LoginView.vue';
+import faqViewVue from '@/views/faqView.vue';
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: login
+  },
+  {
+    path: '/faq',
+    name: 'faq',
+    component: faqViewVue
   },
   {
     path: "/:patchMatch(.*)*",

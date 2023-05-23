@@ -5,9 +5,7 @@
 </template>
 
 <style scoped>
-    main {
-        border: solid 2px var(--text);
-    }
+
 </style>
 
 <script setup>
