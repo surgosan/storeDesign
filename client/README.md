@@ -49,9 +49,13 @@ You will write all your code within that component and it will not spill into ot
 
 If you add pictures, put them in the public folder.
 
-Ask me how to call functions if you need to. Ex: Onlick in Vue is @click='functionNameNoParenthesis'
+Ask me how to call functions if you need to. Ex: Onlick in Vue is **@click='functionNameNoParenthesis'**
 
 If you are in charge of a component that will be used multiple times such as the faq box, just make an example one for now and then I will help you create a dynamic object from it that takes in variables.
+
+To create a link to another page on the project, use **\<router-link to='/path'>** to create the link. Refer to **App.vue** in the _src_ folder for examples.
+
+To make a path that goes up a directory, use ../ to go up one.
 
 ## Style
 

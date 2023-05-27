@@ -54,6 +54,10 @@ h1, h2, h3, p, a, ul, li, nav {
     color: var(--text);
 }
 
+p {
+    font-size: 1.15rem;
+}
+
 nav {
     padding-top: 1rem;
     padding-bottom: 1rem;
