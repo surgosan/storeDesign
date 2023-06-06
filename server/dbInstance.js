@@ -1,8 +1,13 @@
 const Sequelize = require('sequelize');
 
-const database = new Sequelize('DatabaseName', 'username', 'password', {
-    host: 'localhost',
-    dialect:'mysql'
+const database = new Sequelize('testing', 'pnjgmmnwswq84zuobo8e', 'pscale_pw_frskedwFteLuuW4dCJN6Em5uyMeg80ilrkt6DNRD6pt', {
+    host: 'aws.connect.psdb.cloud',
+    dialect:'mysql',
+    dialectOptions: {
+        ssl: {
+            rejectUnauthorized: true,        
+        }
+    }
   });
 
 async function init()
