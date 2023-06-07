@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const database = new Sequelize('testing', 'rigygxtr0wfcxpp7qmk2', 'pscale_pw_udAVylD5XEJbalN60JmhP3M6SkIRSE16U10A1X3XXGk', {
+const database = new Sequelize('DATABASENAME', 'USERNAME', 'PASSWORD', {
     host: 'aws.connect.psdb.cloud',
     dialect:'mysql',
     dialectOptions: {
